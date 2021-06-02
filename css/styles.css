@@ -1,0 +1,226 @@
+/* # @ ! Tag formatting */
+body, button, html, input, select, textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+code { font-size: 12px; color: #4d4d4d; }
+.card-short-id { margin-right: 3px; margin-left:4px; color: #a3acb1; font-size: 12px; float: right; }
+.window-header-inline-content .card-short-id { float: left; color: #838c91; font: 14px; font-weight: bold; }
+.card-tag { margin-right: 3px; margin-left:4px; color: #a3acb1; font-size: 12px; float: right; }
+.badge { color: #a3acb1; }
+.badge-icon { color: #b3bcc1; }
+
+/* Hide all lists until TrelloX is installed */
+#board {
+	opacity: 0;
+}
+
+/* Need to add '.new' to the below three and toggle between them */
+/* Move Card details right to accommodate new Labels */
+.list-card {
+    margin-bottom: 7px !important;
+}
+.list-card-details {
+	width: calc( 100% - 20px );
+	padding-left: 16px !important;
+}
+/* Fix Labels to the left of Cards */
+.list-card-labels {
+	margin: 0 !important;
+	position: absolute !important;
+	left: 0;
+	top: 0;
+	height: 100%;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+.list-card.subtask .list-card-labels {
+	border-top-left-radius: 0px;
+}
+.list-card.subtask .card-short-id {
+	color: #4d4941;
+}
+/* Reshape Labels */
+.card-label.mod-card-front {
+	margin: 0 !important;
+	min-width: 0 !important;
+	font-size: 0 !important;
+	height: 100% !important;
+	width: 6px !important;
+	border-radius: 0 !important;
+	z-index: -1;
+}
+
+/* Format Cards transparent */
+.list-card.clear {
+	background: none;
+	box-shadow: none;
+}
+.list-card.clear .list-card-operation {
+	padding: 0 4px;
+}
+.list-card-title.clear {
+	color: #9b9b9b;
+	text-shadow: 0 1px #fff;
+	margin-top: -3px;
+	margin-bottom: 1px;
+	padding-left: 45%;
+}
+.list-card-title.clear .card-short-id {
+	color: #9b9b9b;
+	text-shadow: none;
+}
+/* Removes default Trello spacer line */
+._3Zo5oGEJ9Enqr7:before {
+  border-top: none !important;
+}
+
+.list-card.subtask {
+	color: #4d4941;
+	background: none;
+	box-shadow: none;
+	max-width: 245px;
+	margin-left: auto;
+	margin-top: -8px;
+	opacity: 0.55;
+}
+/* Format Card links */
+.list-card .card-link {
+	display: block;
+	color: #369;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 190px;
+}
+.list-card .card-link-hover {
+	opacity: 0;
+	text-decoration: underline;
+	color: #369;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 190px;
+}
+
+/* Fix resize of Numbers button on toggle */
+.trellox-numbers-btn {
+	min-width: 96px;
+}
+
+/* Define width of collapsed Lists */
+.list-wrapper.collapsed {
+	width: 38px;
+}
+/* Hide all collapsed Lists */
+.list-wrapper.collapsed .list * {
+	display: none;
+}
+/* Now show just the title bars */
+.list-wrapper.collapsed .list-header, .list-wrapper.collapsed .collapse-icon {
+	display: block;
+	min-height: 230px;
+}
+
+/* Remove textarea resize handles */
+textarea.mod-list-name {
+	resize: none !important;
+	height: 24px !important;
+}
+
+/* Reduce with of title text to accommodate collapse icon */
+.list-wrapper .list-header-name {
+	width: calc(100% - 22px);
+}
+
+/* Collapsed List header formatting */
+.list-wrapper.collapsed .list-header-name {
+	width: 204px;
+	display: block;
+	height: 24px;
+	transform: rotate(90deg);
+	transform-origin: left bottom;
+	top: 15px;
+	left: 8px;
+	position: absolute;
+	-webkit-text-stroke:.025em rgba(51,51,51,0.7);
+}
+
+/* Collapse icon common formatting */
+.collapse-icon {
+	float: left;
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	position: relative;
+}
+/* Down collapse icon formatting */
+.collapse-icon:after {
+	display: block;
+	content: '';
+	border-top: 5px solid #999;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position: absolute;
+	top: 8px;
+	left: 5px;
+}
+/* Right collapse icon formatting */
+.list-wrapper.collapsed .collapse-icon:after {
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #999;
+	top: 5px;
+	left: 8px;
+}
+
+/* Lighten in-Card icons - (not working yet, appears to refresh dynamically) *//
+.badge-icon .icon-sm {
+	color: #ddd;
+}
+
+.quiet, .quiet a {
+  color: #a3acb1 !important;
+}
+
+.action-comment {
+  background: none !important;
+  box-shadow: none !important;
+  margin: 0px !important;
+}
+
+.phenom.is-editing .action-comment {
+  background-color: #fff !important;
+  box-shadow: 0 4px 8px -2px rgba(9,30,66,.25), 0 0 0 1px rgba(9,30,66,.08) !important;
+}
+
+
+.action-comment .current-comment {
+  padding: 4px 0px 0px 0px !important;
+}
+
+.meta-add-reaction .reactions-add .reactions-add-icon,
+.js-edit-action,
+.js-confirm-delete-action {
+  color: #a3acb1 !important;
+}
+
+.phenom-reactions {
+  margin-right: 0px !important;
+  margin-left: 405px !important;
+  display: none !important;
+  margin-bottom: 1px !important;
+  margin-top: -24.5px;
+  line-height: 20px !important!
+}
+
+.phenom:hover .phenom-reactions {
+    display: flex !important;
+}
+
+.phenom-meta {
+  min-width: 0px !important;
+}

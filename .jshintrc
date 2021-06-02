@@ -1,0 +1,15 @@
+{
+    "esversion": 6,
+    "browser": true,
+    "jquery": true,
+    "undef": true,
+    "unused": true,
+	"-W100": true,
+	"varstmt": true,
+    "globals": {
+        "MutationSummary": false,
+        "chrome": false,
+        "console": false,
+        "Trello": false
+    }
+}
