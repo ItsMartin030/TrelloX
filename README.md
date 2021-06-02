@@ -11,3 +11,4 @@ https://trellox.io
 A Firefox extension to give Trello a more up-to-date user experience, reducing clutter and increasing focus.
 
 * [**Installation Guide**](https://github.com/ItsMartin030/TrelloX-for-Firefox/wiki/Installation)
+* [**Download TrelloX for Firefox**](https://addons.mozilla.org/de/firefox/addon/trellox-for-firefox/)
