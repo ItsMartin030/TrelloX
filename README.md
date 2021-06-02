@@ -1,4 +1,4 @@
-# TrelloX - Trello with focus.
+# TrelloX for Firefox - Trello with focus.
 
 Originally made by sammilucia, edited by Martin030.
 Original TrelloX for Chrome: https://github.com/sammilucia/TrelloX
